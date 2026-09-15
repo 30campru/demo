@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+        <a-box
+            position="0 1 -5"
+            depth="2"
+            height="2"
+            width="2"
+            color="rgb(255,0,0)"
+            animation="
+                property: position;
+                from: 0 0 0;
+                to: 0 360 0;
+                dur: 2000;
+                easing: "elastic";
+                loop: true;
+            "
+            animation__2="
+                property: color;
+                from: rgb(70,70,50);
+                to: rgb(255,25,55);
+                dur: 500;
+                dir: alternate;
+                loop: true;
+                easing: linear;"
+                
+                
+            animation__3="
+            property: rotation;
+            from: 0 1 -5;
+            to: 0 3600 0;
+            dur: 100;
+            dir: alternate;
+            loop: true;"
+            
+            
+            
+            >
+        </a-box>
+        </a-scene>
+    </body>
+</html>
